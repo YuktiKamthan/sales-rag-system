@@ -242,8 +242,8 @@ MIT License - see LICENSE file for details
 ## 👤 Author
 
 **Yukti**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@YuktiKamthan](https://github.com/yourusername)
+- LinkedIn: [Yukti Kamthan](www.linkedin.com/in/yuktikamthan)
 
 ## 🙏 Acknowledgments
 
