@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+
+# Data files - NEVER commit real data
+data/sales_data_OLD.xlsx
+data/*_OLD.xlsx
+data/*_REAL.xlsx
+data/*_backup.xlsx
+
+# ChromaDB - contains embeddings
+data/chroma_db/
+chroma_db/
+*.db
+*.sqlite3
+
+# Secrets
+.env
+*.key
+*secret*
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Outputs
+outputs/*.png
+outputs/*.json
+outputs/*.txt
+
+# Logs
+*.log
+telemetry/
+traces/
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/

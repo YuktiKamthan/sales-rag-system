@@ -1,0 +1,49 @@
+# Configuration for Sales RAG System
+
+# Data Settings
+data:
+  input_file: "data/sales_data.xlsx"
+  date_column: "Date"
+  target_column: "Amount"
+  
+# Embedding Model Settings
+embeddings:
+  model_name: "all-MiniLM-L6-v2"  # Fast and efficient
+  chunk_size: 500
+  chunk_overlap: 50
+
+# Vector Store Settings
+vector_store:
+  collection_name: "sales_data"
+  persist_directory: "./chroma_db"
+  distance_metric: "cosine"
+
+# RAG Settings
+rag:
+  top_k_results: 5  # How many similar records to retrieve
+  temperature: 0.3  # Lower = more focused responses
+  max_tokens: 1000
+
+# LLM Settings (Gemini - like your previous work)
+llm:
+  provider: "gemini"
+  model: "gemini-pro"
+  api_key_env: "GEMINI_API_KEY"
+
+# Sales Prediction Settings
+prediction:
+  forecast_periods: 12  # Predict next 12 months
+  seasonality_mode: "multiplicative"
+  changepoint_prior_scale: 0.05
+
+# OpenTelemetry Settings
+telemetry:
+  service_name: "sales-rag-system"
+  jaeger_host: "localhost"
+  jaeger_port: 6831
+  enable_tracing: true
+  
+# Performance Settings
+performance:
+  batch_size: 100
+  cache_embeddings: true
